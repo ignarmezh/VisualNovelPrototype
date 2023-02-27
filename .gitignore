@@ -208,6 +208,7 @@ Plugins/**/Intermediate/*
 mono_crash.*
 
 # Build results
+[Bb]uild/
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -584,3 +585,10 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/unrealengine,c++,visualstudio,rider
+
+#Custom:
+
+VisualNovelGame/Binaries/*
+VisualNovelGame/.idea/*
+VisualNovelGame/Intermediate/Build/*
+VisualNovelGame/Saved/Autosaves/*
