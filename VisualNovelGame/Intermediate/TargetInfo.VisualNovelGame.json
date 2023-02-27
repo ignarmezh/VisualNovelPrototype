@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "VisualNovelGame",
+			"Path": "D:\\Personal\\VisualNovelPrototype\\VisualNovelGame\\Source\\VisualNovelGame.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "VisualNovelGameEditor",
+			"Path": "D:\\Personal\\VisualNovelPrototype\\VisualNovelGame\\Source\\VisualNovelGameEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

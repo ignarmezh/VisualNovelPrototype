@@ -592,3 +592,4 @@ VisualNovelGame/Binaries/*
 VisualNovelGame/.idea/*
 VisualNovelGame/Intermediate/Build/*
 VisualNovelGame/Saved/Autosaves/*
+VisualNovelGame/Saved/Config/CrashReportClient/*
