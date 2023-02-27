@@ -12,19 +12,20 @@ class VISUALNOVELGAME_API UDialogWidget: public UUserWidget
 	
 	virtual void NativeConstruct() override;
 	virtual void NativeDestruct() override;
-	
-	UFUNCTION()
-	void ShowNextDialogOrChoices();
-	UFUNCTION()
-	void ChoiceSelected(int32 SelectedIndex);
 
 protected:
-	FDialogueInfo* GetDataTableInfo(FName RowName) const;
-	void ShowNewDialogArea(int32 Index);
+	FDialogueInfo* GetDataTableInfo(const FName RowName) const;
+	void ShowNewDialogArea(const int32 Index);
 	void ShowChoices();
 
 	UFUNCTION(BlueprintCallable)
 	void OnFadeOutFinished();
+	
+	UFUNCTION()
+	void ShowNextDialogOrChoices();
+	
+	UFUNCTION()
+	void ChoiceSelected(const int32 SelectedIndex);
 
 protected:
 	UPROPERTY(BlueprintReadWrite, meta = (BindWidget))

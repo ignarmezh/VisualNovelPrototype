@@ -29,14 +29,14 @@ void UDialogWidget::NativeDestruct()
 	}
 }
 
-FDialogueInfo* UDialogWidget::GetDataTableInfo(FName RowName) const
+FDialogueInfo* UDialogWidget::GetDataTableInfo(const FName RowName) const
 {
 	FDialogueInfo* DialogueInfo = DTDialogueInfo->FindRow<FDialogueInfo>(RowName, "");
 	return DialogueInfo;
 }
 
 
-void UDialogWidget::ShowNewDialogArea(int32 Index)
+void UDialogWidget::ShowNewDialogArea(const int32 Index)
 {
 	DialogCurrentIndex = Index;
 	CurrentDialogInfo = GetDataTableInfo(FName(FString::FromInt(Index)));
@@ -91,7 +91,7 @@ void UDialogWidget::ShowNextDialogOrChoices()
 	}
 }
 
-void UDialogWidget::ChoiceSelected(int32 SelectedIndex)
+void UDialogWidget::ChoiceSelected(const int32 SelectedIndex)
 {
 	if(DialogCurrentIndex != SelectedIndex)
 	{
